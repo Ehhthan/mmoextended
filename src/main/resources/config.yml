@@ -1,0 +1,15 @@
+#
+# MMOExtended by Sek
+#
+# Requires MMOLib.
+#
+# Supports MMOItems, MMOCore, StackableItems
+#
+#
+
+#
+# Defense formula
+#
+# <def> = Defense Level
+#
+defense-formula: <def>/(<def>+100)
