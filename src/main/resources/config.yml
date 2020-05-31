@@ -6,10 +6,10 @@
 # Supports MMOItems, MMOCore, StackableItems
 #
 #
-
+# Defense Formula
+# Defense applies at the lowest event level
 #
-# Defense formula
-#
-# <def> = Defense Level
+# <def> = DefenseListener Level
+# Damage = Damage - (Damage * Defense-Formula)
 #
 defense-formula: <def>/(<def>+100)

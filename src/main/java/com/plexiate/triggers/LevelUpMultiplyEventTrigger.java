@@ -8,7 +8,7 @@ import net.Indyuce.mmocore.api.quest.trigger.Trigger;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
 
-public class LevelEveryEventTrigger implements EventTriggerHandler {
+public class LevelUpMultiplyEventTrigger implements EventTriggerHandler {
     public boolean handles(String event) {
         return event.startsWith("level-up-multiple");
     }
