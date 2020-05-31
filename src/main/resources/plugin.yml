@@ -1,0 +1,8 @@
+name: MMOExtended
+version: ${project.version}
+main: com.plexiate.MMOExtended
+api-version: 1.13
+prefix: MMOExtended
+depend: [MMOLib]
+softdepend: [StackableItems, MMOCore, MMOItems]
+authors: [Sek, Ehh]
