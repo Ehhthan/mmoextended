@@ -1,9 +1,8 @@
 package com.plexiate.listener;
 
-import com.plexiate.MMOExtended;
+import com.plexiate.files.CustomConfig;
 import net.Indyuce.mmocore.api.player.PlayerData;
 import org.bukkit.OfflinePlayer;
-import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
@@ -15,7 +14,7 @@ import java.text.DecimalFormat;
 
 public class DefenseListener implements Listener {
 
-    private static FileConfiguration config = MMOExtended.config;
+    private static String formula = CustomConfig.defenseFormula;
 
     @EventHandler(priority = EventPriority.LOWEST, ignoreCancelled = true)
     public void a(EntityDamageEvent event) {
@@ -28,7 +27,6 @@ public class DefenseListener implements Listener {
     }
     public static double calculateDefenseCoefficient(PlayerData data) {
         double defense = data.getStats().getMap().getStat("DEFENSE");
-        String formula = (String) config.get("defense-formula");
         return roundFourPlaces(eval(formula.replace("<def>", String.valueOf(defense))));
     }
 

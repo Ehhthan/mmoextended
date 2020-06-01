@@ -4,5 +4,13 @@ main: com.plexiate.MMOExtended
 api-version: 1.13
 prefix: MMOExtended
 depend: [MMOLib]
-softdepend: [StackableItems, MMOCore, MMOItems]
+softdepend: [StackableItems, MMOCore, MMOItems, PlaceholderAPI]
 authors: [Sek, Ehh]
+commands:
+  mmoextended:
+    description: Main command.
+    aliases: [mmoe]
+permissions:
+  mmoextended.admin:
+    description: Access to /mmoextended
+    default: op

@@ -13,3 +13,4 @@
 # Damage = Damage - (Damage * Defense-Formula)
 #
 defense-formula: <def>/(<def>+100)
+
